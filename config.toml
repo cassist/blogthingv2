@@ -1,114 +1,122 @@
-baseurl = ""
-languageCode = "en-ca"
-theme = "hugo-theme-stack"
-paginate = 5
+baseURL = "https://example.com"
+languageCode = "en"
+DefaultContentLanguage = "en"
 title = "mcchiu blogthingv2"
-disqusShortname = ""                            # Change it to your Disqus shortname before using
-DefaultContentLanguage = "en"                   # Theme i18n support
-googleAnalytics = "UA-131046266-1"
+#theme = "anatole"
+summarylength = 140
 enableEmoji = true
-hasCJKLanguage = true
-summaryLength = 140
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = ""
+
+# Google Analytics
+#googleAnalytics = "UA-131046266-1"
+
+# Syntax highlighting
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+[module]
+    [[module.imports]]
+    path = "github.com/lxndrblz/anatole"
 
 [permalinks]
-    post = "/blog/:year/:slug/"
+    blog = "/blog/:year/:slug/"
     page = "/:slug/"
-    
+
+##  settings  -------------------------------------------------------------------------------------
+
 [params]
-    mainSections = ["post"]
-    featuredImageField = "image"
-    rssFullContent = true
-    
-    [params.dateFormat]
-        published = "Jan 02, 2006"
-        lastUpdated = "Jan 02, 2006 15:04 MST"
-        
-    [params.sidebar]
-        emoji = "🤔"
-        avatar = "img/avatar.png"
-        subtitle = """I verb nouns || F/A for ??? || Business inquiries: agent@agency.gg"""
-        #subtitle = "everything in moderation, including moderation"
-        
-    [params.article]
-        math = false
-        [params.article.license]
-            enabled = true 
-            default = "Licensed under CC BY-NC-SA 4.0"
-            
-    [params.comments]
-        enabled = false
-        provider = "disqus"         # Available: disqus, utterances    
-        [params.comments.utterances]
-            repo = ""
-            issueTerm = "pathname"
-            label = ""             # Optional
-            theme = "preferred-color-scheme"
-            
-    [params.widgets]
-        enabled = ['search', 'archives', 'tag-cloud']
-        [params.widgets.archives]
-            limit = 5
-            ### Archives page relative URL
-            path = "archives"       
-        [params.widgets.tagCloud]
-            limit = 10
-            
-    [params.opengraph]
-        [params.opengraph.twitter]
-            site = ""
-            card = "summary_large_image"
-            
-    [params.defaultImage]
-        [params.defaultImage.opengraph]
-            enabled = false
-            local = false
-            src = ""
-            
+title = "mcchiu blogthingv2"
+author = "michael chiu"
+#copyright = "2020-2021"
+description = """ big dreamer in a realist's body with not much to show for it """
+# i verb nouns || F/A for ??? 
+profilePicture = "images/avatar.png"
+keywords = ""
+favicon = "favicons/"
+# example ["css/custom.css"]
+customCss = ["css/custom.css"]
+# example ["js/custom.js"]
+customJs = [] 
+mainSections = ["blog"]
+images = []
+doNotLoadAnimations = true
+# Form Spree Contact Form
+contactFormAction = "https://formspree.io/f/mjvjvzaj"
+# Google Site Verify
+#googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+indexDateFormat = "2006 Jan 2"
+# listDateFormat = "Jan 2"
+# singleDateFormat = "Mon, Jan 2, 2006"
+
+
+# Commento Comments
+# CommentoURL = "https://commento.example.com/js/commento.js"
+# Read More links for truncated summaries
+# readMore = true
+# postSectionName = "blog"
+
+[params.simpleAnalytics]
+# enable = true
+# customurl = "https://analytics.example.com"
+
+## Math settings  -------------------------------------------------------------------------------------
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+## Social links ---------------------------------------------------------------------------------------
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/cassist/"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:contact@mcchiu.ca"
+
+#[[params.socialIcons]]
+#icon = "fab fa-instagram"
+#title = "instagram"
+#url = "https://www.instagram.com/"
+
+#[[params.socialIcons]]
+#icon = "fab fa-linkedin"
+#title = "Linkedin"
+#url = "https://de.linkedin.com/"
+
+
+## Menu items  ---------------------------------------------------------------------------------------
+
 [menu]
-    [[menu.main]]
-        identifier = "home"
-        name = "Home"
-        url = "/"
-        weight = -100
-        pre = "home"
-    [[menu.main]]
-        identifier = "about-cn"
-        name = "About"
-        url = "about"
-        weight = -90
-        pre = "user"
-    [[menu.main]]
-        identifier = "archives"
-        name = "Archives"
-        url = "archives"
-        weight = -70
-        pre = "archives"
-    [[menu.main]]
-        identifier = "search"
-        name = "Search"
-        url = "search"
-        weight = -60
-        pre = "search"        
-    [[menu.main]]
-        identifier = "git"
-        name = "GitHub"
-        url = "git"
-        weight = -50
-        pre = "GitHub-icon"
 
-[related]
-    includeNewer = true
-    threshold = 60
-    toLower = false
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
 
-    [[related.indices]]
-        name = "tags"
-        weight = 100
+  [[menu.main]]
+  name = "Blog"
+  weight = 200
+  identifier = "blog"
+  url = "/blog/"
 
-    [[related.indices]]
-        name = "categories"
-        weight = 200
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
 
-[markup]
-    [markup.highlight]
-        noClasses = false
+  [[menu.main]]
+  name = "Contact"
+  weight = 400
+  identifier = "contact"
+  url = "/contact/"
