@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
+/* change font */
 body {
     font-family: 'PT Sans', 'Verdana', sans-serif;
     font-size: 14px;
 }
 
+/* reduce line height */
+p {
+    line-height: 1.5em;
+}
+/* increase right margin for post content, looking cramped without */
+.post-content {
+    margin-right: 25px;
+}
+/* trying to get emojis to work */
 .emojify {
 	font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'NotoColorEmoji', 'Segoe UI Symbol', 'Android Emoji', 'EmojiSymbols';
 	font-size: 2rem;
