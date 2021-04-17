@@ -5,7 +5,5 @@ Description: ""
 Tags: []
 Categories: []
 DisableComments: false
-draft : true
+draft: true
 ---
-
-Beginning as a pseudo (empty) 

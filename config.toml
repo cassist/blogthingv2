@@ -3,7 +3,7 @@ languageCode = "en"
 DefaultContentLanguage = "en"
 title = "mcchiu blogthingv2"
 #theme = "anatole"
-summarylength = 140
+#summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
 
@@ -57,8 +57,10 @@ indexDateFormat = "2006 Jan 2"
 # Commento Comments
 # CommentoURL = "https://commento.example.com/js/commento.js"
 # Read More links for truncated summaries
-# readMore = true
+readMore = true
 # postSectionName = "blog"
+# show full posts on main page
+fullPostContent = true
 
 [params.simpleAnalytics]
 # enable = true
