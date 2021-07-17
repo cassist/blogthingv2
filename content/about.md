@@ -16,8 +16,10 @@ I have more interests than I have time or energy.  Some include:
 * Indie CJK Music
 * Valorant eSports
 * Speculative Fiction
-* Coffee
-* Soccer
+* Reading Wikipedia
+* Specialty and Third Wave Coffee
+* Bundesliga
+* Raiding in FFXIV
 * Babying my three cats
 * and the list goes on
 
