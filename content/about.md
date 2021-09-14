@@ -12,13 +12,13 @@ My background is in electrical engineering. My favourite course from university 
 
 I have more interests than I have time or energy.  Some include:
 
-* Travel and Art Photography
-* Indie CJK Music
-* Valorant eSports
-* Speculative Fiction
-* Reading Wikipedia
-* Specialty and Third Wave Coffee
-* Bundesliga
+* Creating and Enjoying Travel and Art Photography
+* Listening to Indie CJK Music
+* Consuming Valorant eSports
+* Reading Speculative Fiction...
+* ... and Wikipedia like a book
+* Brewing and Drinking Locally Roasted Coffee
+* Cheering on Bayern Munich in the Bundesliga
 * Raiding in FFXIV
 * Babying my three cats
 * and the list goes on
